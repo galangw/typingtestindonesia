@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Typing Speed Tester</title>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="body"></div>
+    <div class="bodyContainer">
+        <div class="title">
+            <h1>Typing Test Indo</h1>
+            <!-- reload  -->
+            <div class="navkanan">
+                <div class="Refresh">
+                    <a class="klikreload" onclick="reload();">Reload</a>
+                </div>
+                <h5> </h5>
+            </div>
+        </div>
+        <!-- list kata dan text area -->
+        <div class="mainContent_Container">
+            <div class="passage_Container"></div>
+            <div class="passageInput_Container"><input class="passageInput" type="text" /></div>
+            <div class="stats_Container">
+                <!-- statistik -->
+                <div class="stats">
+                    <div class="header">Statistics</div>
+                    <div class="baseContent">
+                        <h1><span id="stats_wordsPerMinute">0</span> wpm</h1>
+                        <div class="baseContent_allStats">
+                            <table>
+                                <tr>
+                                    <td>Time Remaining</td>
+                                    <td class='right'><span id="stats_timeRemaining">0s</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Words Remaining</td>
+                                    <td class='right'><span id="stats_wordsRemaining">0</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Correct Words</td>
+                                    <td class='right'><span id="stats_correctWords">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Characters</td>
+                                    <td class='right'><span id="stats_totalChars">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Character Accuracy</td>
+                                    <td class='right'><span id="stats_charAcc">0%</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- reload lagi -->
+            <div class="endgame_Container">
+                <div class="button" onclick="reload();">NEW TEST</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="js/kata.js"></script>
+<script src="js/proses.js"></script>
+
+</html>
