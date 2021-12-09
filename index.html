@@ -4,70 +4,93 @@
 <head>
     <title>Typing Speed Tester</title>
     <script src="js/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="body"></div>
-    <div class="bodyContainer">
-        <div class="title">
-            <h1>Typing Test Indo</h1>
-            <!-- reload  -->
-            <div class="navkanan">
-                <div class="Refresh">
-                    <a class="klikreload" onclick="reload();">Reload</a>
-                </div>
-                <h5> </h5>
+    <div class="container">
+        <div class="card shadow p-3 mt-5 bg-body rounded">
+            <div class="title">
+                <h1 class="text-center">Typing Test Indo</h1>
             </div>
-        </div>
-        <!-- list kata dan text area -->
-        <div class="mainContent_Container">
-            <div class="passage_Container"></div>
-            <div class="passageInput_Container"><input class="passageInput" type="text" /></div>
-            <div class="stats_Container">
-                <!-- statistik -->
-                <div class="stats">
-                    <div class="header">Statistics</div>
-                    <div class="baseContent">
-                        <h1><span id="stats_wordsPerMinute">0</span> wpm</h1>
-                        <div class="baseContent_allStats">
-                            <table>
-                                <tr>
-                                    <td>Time Remaining</td>
-                                    <td class='right'><span id="stats_timeRemaining">0s</span></td>
-                                </tr>
+            <!-- list kata dan text area -->
+            <div class="mainContent_Container card-body text-center mt-5">
+                <div class="passage_Container card-text"></div>
+                <div class="passageInput_Container">
+                    <form>
+                        <input class="passageInput form-control mt-5 mb-5" type="text" />
+                </div>
+                </form>
+                <div class="stats_Container">
+                    <!-- statistik -->
+                    <div class="stats">
+                        <h4 class="header">Statistics</h3>
+                            <div class="baseContent">
+                                <h1><span id="stats_wordsPerMinute">0</span> wpm</h1>
+                                <div class="baseContent_allStats">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <table class="col-md-4">
+                                            <tr>
+                                                <td>Time Remaining</td>
+                                                <td class='right'><span id="stats_timeRemaining">0s</span></td>
+                                            </tr>
 
-                                <tr>
-                                    <td>Words Remaining</td>
-                                    <td class='right'><span id="stats_wordsRemaining">0</span></td>
-                                </tr>
+                                            <tr>
+                                                <td>Words Remaining</td>
+                                                <td class='right'><span id="stats_wordsRemaining">0</span></td>
+                                            </tr>
 
-                                <tr>
-                                    <td>Correct Words</td>
-                                    <td class='right'><span id="stats_correctWords">0</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Total Characters</td>
-                                    <td class='right'><span id="stats_totalChars">0</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Character Accuracy</td>
-                                    <td class='right'><span id="stats_charAcc">0%</span></td>
-                                </tr>
-                            </table>
-                        </div>
+                                            <tr>
+                                                <td>Correct Words</td>
+                                                <td class='right'><span id="stats_correctWords">0</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Characters</td>
+                                                <td class='right'><span id="stats_totalChars">0</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Character Accuracy</td>
+                                                <td class='right'><span id="stats_charAcc">0%</span></td>
+                                            </tr>
+                                        </table>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
-            </div>
-            <!-- reload lagi -->
-            <div class="endgame_Container">
-                <div class="button" onclick="reload();">NEW TEST</div>
+                <!-- reload  -->
+                <div class="navkanan">
+                    <div class="Refresh">
+                        <a class="klikreload btn btn-outline-primary mt-3 d-flex justify-content-center"
+                            onclick="reload();">Reload</a>
+                    </div>
+                    <h5></h5>
+                </div>
+                <!-- reload lagi -->
+                <div class="endgame_Container">
+                    <div class="button btn btn-primary d-flex justify-content-center" onclick="reload();">NEW TEST</div>
+                </div>
             </div>
         </div>
-
     </div>
 </body>
 
 <script src="js/kata.js"></script>
 <script src="js/proses.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+</script>
 
 </html>

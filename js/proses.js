@@ -74,7 +74,7 @@ function submitWord(word) {
 }
 
 function showError() {
-  $("div.passageInput_miss").css("display", "flex");
+  // $("div.passageInput_miss").css("display", "flex");
   $("div.passageInput_miss").hide();
   $("div.passageInput_miss").fadeIn(250).fadeOut(250);
 }
@@ -112,7 +112,7 @@ function endTest() {
   $("div.passage_Container").slideUp(250);
   $("div.passageInput_Container").slideUp(250);
   $("div.endgame_Container").fadeIn(500);
-  $("div.endgame_Container").css("display", "flex");
+  // $("div.endgame_Container").css("display", "flex");
 }
 
 function reload() {
@@ -126,7 +126,7 @@ function updateWordsRemaining() {
 function begin() {
   $("div.passageInput_hint").remove();
   $("div.stats_Container").fadeIn(500);
-  $("div.stats_Container").css("display", "flex");
+  // $("div.stats_Container").css("display", "flex");
 }
 
 passageInput.addEventListener("input", () => {
